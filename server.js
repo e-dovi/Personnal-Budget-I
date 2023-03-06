@@ -33,11 +33,6 @@ app.get('/one/:id', (req, res)=>{
         } 
     }
 })
-// Just trying something
-app.get('/try/:id', (req, res)=>{
-    const ar=[req.query, req.params]
-    res.send(JSON.stringify(ar))
-})
 //////////////////////////
 app.put('/withdraw/:id', (req, res)=>{
     const env=req.params.id;
